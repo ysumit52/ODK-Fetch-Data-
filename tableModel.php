@@ -1,6 +1,6 @@
 	<?php
 	 if (isset($_POST['getData'])) {
-		$conn = new mysqli('localhost', 'root', 'test123', 'impact2');
+		$conn = new mysqli('localhost', '', '', '');
 		 $getData = $conn->real_escape_string($_POST['getData']);
 		// $getData = "uuid:c6155b3a-fb28-4647-99d0-7d2f72674ebb";
 		$start = $conn->real_escape_string($_POST['start']);
